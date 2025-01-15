@@ -14,7 +14,7 @@ function Header (){
         navigate('/')
     }
     
-    return <header>
+    return (<header>
         <div className="align-element flex justify-center sm:justify-end py-2">
             {/* User */}
             {user? (
@@ -39,6 +39,6 @@ function Header (){
 
         </div>
 
-    </header>;
+    </header>);
 }
 export default Header;
