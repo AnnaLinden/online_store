@@ -1,5 +1,5 @@
 function CartButton() {
-  return <div> CatButton </div>;
+  return <div> CartButton </div>;
 }
 
 export default CartButton;
