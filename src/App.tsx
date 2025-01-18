@@ -1,4 +1,4 @@
-import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import {
   HomeLayout,
@@ -12,55 +12,54 @@ import {
   Login,
   Checkout,
   Orders,
-} from './pages';
-
+} from "./pages";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <HomeLayout />,
+    errorElement: <Error />,
+
     children: [
       {
         index: true,
-        element: <Landing/>,
+        element: <Landing />,
       },
       {
-        path: 'products',
-        element: <Products/>,
+        path: "products",
+        element: <Products />,
       },
       {
-        path: 'products/:id',
+        path: "products/:id",
         element: <SingleProduct />,
       },
       {
-        path: 'cart',
+        path: "cart",
         element: <Cart />,
       },
-      { path: 'about', element: <About /> },
+      { path: "about", element: <About /> },
       {
-        path: 'checkout',
+        path: "checkout",
         element: <Checkout />,
       },
       {
-        path: 'orders',
+        path: "orders",
         element: <Orders />,
       },
-
-
     ],
   },
   {
-    path: '/login',
-    element: <Login/>,
+    path: "/login",
+    element: <Login />,
+    errorElement: <Error />,
   },
   {
-    path: 'register',
-    element: <Register/>,
+    path: "register",
+    element: <Register />,
+    errorElement: <Error />,
   },
-])
+]);
 function App() {
-  return (
-    <RouterProvider router={router}></RouterProvider>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 export default App;
