@@ -51,8 +51,6 @@ function ProductsContainer() {
           <ProductsList />
         )}
       </div>
-
-      <ProductsList></ProductsList>
     </>
   );
 }
