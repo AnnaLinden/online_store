@@ -19,7 +19,7 @@ type ConstructPrevOrNextParams = {
   pathname: string;
 };
 
-export const ConstructPrevOrNextUrl = ({
+export const constructPrevOrNextUrl = ({
   currentPage,
   pageCount,
   search,
