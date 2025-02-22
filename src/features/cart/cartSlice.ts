@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { type CartItem, type CartState } from "@/utils";
-import { toast } from "@/components/ui/use-toast";
+import { toast } from "sonner";
 import { stringify } from "querystring";
 import { Description } from "@radix-ui/react-toast";
 
@@ -36,7 +36,7 @@ const cartSlice = createSlice({
       //   state.orderTotal = state.cartTotal + state.shipping + state.tax;
       //   localStorage.setItem("cart", JSON.stringify(state));
       cartSlice.caseReducers.calculateTotal(state);
-      toast({ description: "Item added to cart" });
+      toast("Item added to cart");
     },
     clearCart: () => {},
     removeItem: () => {},
