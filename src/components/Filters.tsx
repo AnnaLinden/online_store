@@ -46,7 +46,7 @@ function Filters() {
       <FormCheckbox
         label='free shipping'
         name='shipping'
-        defualtValue={shipping}
+        defaultValue={shipping}
       />
 
       <Button type='submit' size='sm' className='self-end mb-2'>
