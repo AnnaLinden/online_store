@@ -20,7 +20,6 @@ export const FirstColumn = ({
     />
   );
 };
-
 export const SecondColumn = ({
   title,
   company,
@@ -35,7 +34,7 @@ export const SecondColumn = ({
       <h3 className='capitalize font-medium'>{title}</h3>
       <h4 className='mt-2 capitalize text-sm'>{company}</h4>
       <p className='mt-4 text-sm capitalize flex items-center gap-x-2'>
-        color :
+        color :{" "}
         <span
           style={{
             width: "15px",
@@ -65,7 +64,6 @@ export const ThirdColumn = ({
   const setAmount = (value: number) => {
     dispatch(editItem({ cartID, amount: value }));
   };
-
   return (
     <div>
       <SelectProductAmount
@@ -79,7 +77,6 @@ export const ThirdColumn = ({
     </div>
   );
 };
-
 export const FourthColumn = ({ price }: { price: string }) => {
   return <p className='font-medium sm:ml-auto'>{formatAsEuro(price)}</p>;
 };

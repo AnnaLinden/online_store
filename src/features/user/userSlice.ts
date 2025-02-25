@@ -16,8 +16,8 @@ const getUserFromLocalStorage = (): User | null => {
   return JSON.parse(user);
 };
 
-const initialState = {
-  name: getUserFromLocalStorage(),
+const initialState: UserState = {
+  user: getUserFromLocalStorage(),
 };
 const userSlice = createSlice({
   name: "user",
@@ -27,9 +27,8 @@ const userSlice = createSlice({
       const user = action.payload;
       state.user = user;
       localStorage.setItem("user", JSON.stringify(user));
-
       if (user.username === "demo user") {
-        toast("Welcome GuestUser");
+        toast("Welcome Guest User");
         return;
       }
       toast("Login successful");
@@ -42,4 +41,5 @@ const userSlice = createSlice({
 });
 
 export const { loginUser, logoutUser } = userSlice.actions;
+
 export default userSlice.reducer;
