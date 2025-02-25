@@ -8,10 +8,11 @@ type ThemeState = {
 };
 
 const initializeTheme = (): Theme => {
-  const theme = (localStorage.getItem("item") as Theme) || "system";
+  const theme = (localStorage.getItem("theme") as Theme) || "system";
   applyTheme(theme);
   return theme;
 };
+
 const initialState: ThemeState = {
   theme: initializeTheme(),
 };
