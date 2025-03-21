@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { formatAsEuro, ProductsResponse } from "@/utils";
 const ProductsGrid = () => {
   const { data: products } = useLoaderData() as ProductsResponse;
+  console.log("Products:", products);
 
   return (
     <div className='pt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3 '>
@@ -17,7 +18,7 @@ const ProductsGrid = () => {
                 <img
                   src={image}
                   alt={title}
-                  className='rounded-md h-64 md:h-48 w-full object-cover'
+                  className='rounded-md h-64 md:h-46 w-full object-cover'
                 />
                 <div className='mt-4 text-center'>
                   <h2 className='text-xl font-semibold capitalize'>{title}</h2>

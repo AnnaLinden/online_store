@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Wheat } from "lucide-react";
+import { Dumbbell } from "lucide-react";
 
 function Logo() {
   return (
@@ -8,7 +8,7 @@ function Logo() {
       className='hidden lg:flex justify-center items-center bg-primary p-2 rounded-lg text-w>
    text-white'
     >
-      <Wheat className='w-8 h-8' />
+      <Dumbbell className='w-8 h-8' />
     </Link>
   );
 }

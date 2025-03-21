@@ -4,7 +4,7 @@ export type ProductsResponse = {
 };
 
 export type Product = {
-  id: number;
+  id: string;
   attributes: {
     category: string;
     company: string;

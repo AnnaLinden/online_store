@@ -1,8 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { type CartItem, type CartState } from "@/utils";
 import { toast } from "sonner";
-import { stringify } from "querystring";
-import { Description } from "@radix-ui/react-toast";
 
 const defaultState: CartState = {
   cartItems: [],
