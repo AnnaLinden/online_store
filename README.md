@@ -1,6 +1,6 @@
 # TS Store Frontend (React + TypeScript + Redux toolkit + Vite)
 
-This project is a work in progress. It's a TypeScript-based store built with React, TypeScript, styled using Shadcn UI, and manages state using Redux Toolkit.
+This project is in progress. It's a TypeScript-based store built with React, styled using Shadcn UI, and Redux Toolkit for state management.
 
 ## Technologies Used
 
